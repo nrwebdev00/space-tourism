@@ -1,0 +1,51 @@
+@font-face{
+    font-family: 'Bellefair';
+    src: url('../../Fonts/bellefair/Bellefair-Regular.ttf');
+}
+@font-face{
+    font-family: 'Barlow';
+    src: url('../../Fonts/barlow/OFL.txt');
+}
+:root{
+    // Colors
+    --clr--black: hsl(230, 35%, 7%);
+    --clr--purple: hsl(231, 76%, 90%);
+    --clr--white: hsl(0, 0%, 100%);
+
+    --clr-primary: var(--clr--purple);
+
+    // Font
+    --font-family-default: 'Bellefair', serif;
+    --font-family-secondary: 'Barlow', serif;
+
+    --fs-100: 0.875rem;
+    --fs-200: 1.0rem;
+    --fs-300: 1.125rem;
+    --fs-400: 1.75rem;
+    --fs-500: 2.0rem;
+    --fs-600: 3.5rem;
+    --fs-700: 6.25rem;
+    --fs-800: 9.325rem;
+
+    --fs-default: var(--fs-300);
+
+    --fw-default: 400;
+    --fw-bold: 700;
+
+    // format
+    --page-max-width: 1440px;
+
+    --space-100: 0.1687rem;
+    --space-200: 0.2968rem;
+    --space-300: 0.9375rem;
+    --space-400: 1.6875rem;
+    --space-500: 2.5rem;
+    --space-600: 2.9375rem;
+    --space-700: 3.75rem;
+    --space-800: 4.375rem;
+    --space-900: 6.5625rem;
+    --space-1000: 8.4375rem;
+    --space-1100: 14.375rem;
+    --space-1200: 15.75rem;
+    --space-1300: 24.00rem;
+}
