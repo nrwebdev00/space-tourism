@@ -1,5 +1,6 @@
 {
-  "name": "blank",
+  "name": "space_tourism",
+  "author": "Nathon Reed",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

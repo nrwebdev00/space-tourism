@@ -7,7 +7,6 @@ import logo from '../Img/shared/logo.png';
 export default function Header(props) {
   const [active] = useState(props.active)
 
-  console.log(active)
   return (
     <header className="header-main">
       <Link to='/' ><img src={logo} alt="logo" /></Link>
