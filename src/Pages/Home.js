@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 // Import Components
 import Header from '../Components/HeaderMain'
@@ -45,6 +46,22 @@ export default function Home() {
       style={{ backgroundImage: `url(${responsiveBackgroundImage()})`}}
     >
       <Header active='Home' />
+      <main className="page-home__main">
+        <section className="page-home__main__left">
+          <div className="heading-5 padding-bottom-4">So, you want to travel to</div>
+          <div className="heading-1 padding-bottom-4">Space</div>
+          <p className='home-text page-home-text'>
+          Let’s face it; if you want to go to space, you might as well genuinely go to
+          outer space and not hover kind of on the edge of it. Well sit back, and relax
+          because we’ll give you a truly out of this world experience!
+          </p>
+        </section>
+        <section className="page-home__main__right">
+          <Link to='destination/' className="page-home-explore">
+            <div className="heading-4 explore-text">Explore</div>
+          </Link>
+        </section>
+      </main>
     </div>
   )
 }

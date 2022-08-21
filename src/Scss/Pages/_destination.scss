@@ -4,3 +4,48 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.destination{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+
+    &__left{
+        padding: 6.6rem 0 0 16.77rem;
+
+    }
+
+    &__right{
+        padding-top: 10.25rem;
+
+        &__nav-bar{
+            width: 100%;
+            height: 8rem;
+
+            ul{
+                display: flex;
+                justify-content: flex-start;
+                li{
+                    cursor: pointer;
+                }
+                li:not(:last-child){
+                    padding-right: 3rem;
+                }
+            }
+        }
+        .destination-info{
+
+            &__text{
+                max-width: 50rem;
+                line-height: 1.75;
+            }
+        }
+        .destination-distance{
+            border-top: 2px solid rgba(255,255,255, 0.5);
+            max-width: 60rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+    }
+}

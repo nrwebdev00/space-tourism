@@ -4,7 +4,7 @@
 }
 @font-face{
     font-family: 'Barlow';
-    src: url('../../Fonts/barlow/OFL.txt');
+    src: url('../../Fonts/barlow/Barlow.otf');
 }
 :root{
     // Colors
@@ -20,12 +20,13 @@
 
     --fs-100: 1.203rem;
     --fs-200: 1.375rem;
-    --fs-300: 1.5468rem;
+    --fs-300: 1.7468rem;
     --fs-400: 2.4062rem;
     --fs-500: 2.75rem;
     --fs-600: 4.8125rem;
     --fs-700: 8.593rem;
     --fs-800: 12.821rem;
+    --fs-900: 15rem;
 
     --fs-default: var(--fs-300);
 
@@ -47,5 +48,6 @@
     --space-1000: 8.4375rem;
     --space-1100: 14.375rem;
     --space-1200: 15.75rem;
-    --space-1300: 24.00rem;
+    --space-1300: 19.25rem;
+    --space-1400: 22rem;
 }

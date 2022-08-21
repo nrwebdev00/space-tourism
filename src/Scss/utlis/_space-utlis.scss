@@ -16,6 +16,7 @@ $sizes:(
     "size-11": var(--space-1100),
     "size-12": var(--space-1200),
     "size-13": var(--space-1300),
+    "size-14": var(--space-1400),
 );
 
 @each $size-number, $size-value in $sizes {

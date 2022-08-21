@@ -3,4 +3,57 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    &__main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-300);
+        padding-top: var(--space-1300);
+        &__left{
+            padding-left: var(--space-900);
+
+            .page-home-text{
+                max-width: 45.8125rem;
+                line-height: 2;
+            }
+        }
+        &__right{
+            padding: 8.25rem 0 0 14.8rem;
+            .page-home-explore{
+                width: 27.72rem;
+                height: 27.72rem;
+                background-color: var(--clr--white);
+                border-radius: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:hover{
+                    box-shadow: 15px 10px 35px 30px rgba(255, 255, 255, .75);
+                }
+
+                .explore-text{
+                    color: var(--clr--black);
+                    letter-spacing: 3px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1028px){
+    .page-home{
+        height: 100% ;
+
+        &__main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            &__right{
+                padding: 8.25rem 0 4rem 0;
+            }
+        }
+    }
+
 }
