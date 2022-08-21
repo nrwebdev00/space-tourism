@@ -6,31 +6,6 @@ body{
     font-weight: var(--fw-default);
     @include flex-center;
 }
-
-.container-page{
-    max-width: var(--page-max-width);
-    width: 100%;
-    height: 100vh;
-    border: 1px solid black;
-    background-color: var(--clr--black);
-    padding-top: var(--page-padding-top);
-    padding-left: var(--page-padding-left);
-}
-.container-main{
-    width: 100%;
-    height: 100%;
-    padding-inline: 10rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: .5rem;
-}
-.text-p{
-    max-width: 27.625em;
-    color: var(--clr-primary);
-    text-align: justify;
-    opacity: .75;
-}
-
 .active{
     position: relative;
 }
@@ -43,11 +18,20 @@ body{
     border-bottom: 3px solid var(--clr--white);
     content: "";
 }
+.active-none::after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    border-bottom: 3px solid rgba(255,255,255, 0);
+    content: "";
+}
+.active-none::after:hover{
+   border-bottom: 3px solid rgba(255,255,255, .50);
+}
 .destination-active{
     display: block !important;
-}
-.nav-text{
-    padding-bottom: .75rem;
 }
 
 @media (max-width: 768px){

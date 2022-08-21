@@ -65,14 +65,38 @@
 }
 .nav-text{
     font-family: var(--font-family-secondary);
-    font-size: var(--fs-200);
-    letter-spacing: 2.7px;
+    font-size: var(--fs-400);
+    letter-spacing: 3px;
     color: var(--clr--white);
     text-transform: uppercase;
 }
-.opactiy-50{
+.opacity-50{
     opacity: .50;
 }
 
-// Formating Helpers
-
+// Formatting Helpers
+.container-page{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--clr--black);
+    padding-top: var(--space-200);
+    padding-left: var(--space-100);
+}
+.container-main{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-300);
+}
+.text-p{
+    max-width: 100%;
+    color: var(--clr-primary);
+    text-align: justify;
+    opacity: .75;
+}
+.nav-bar-header{
+    width: 100%;
+    height: 6.8125rem;
+    margin: -2% 0 0 -10%;
+}

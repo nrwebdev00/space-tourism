@@ -1,7 +1,7 @@
 @use "sass:string";
 
 
-$sides:  left, right, top, bottom;
+$sides:  left, right, top, bottom, inline;
 $sizes:(
     "size-1": var(--space-100),
     "size-2": var(--space-200),

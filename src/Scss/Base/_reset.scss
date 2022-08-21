@@ -12,7 +12,9 @@ ul[role='list'],
 ol[role='list']{
     list-style: none;
 }
-
+html{
+    font-size: 62.5%;
+}
 html:focus-within{
     scroll-behavior: smooth;
 }
@@ -40,10 +42,5 @@ a{
     &:visited{
         text-decoration: none;
         color: inherit;
-    }
-}
-@media only screen and (max-width: 768px){
-    html{
-        font-size: 62.5%;
     }
 }
