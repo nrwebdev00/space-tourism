@@ -4,3 +4,38 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.crew{
+    padding: 6rem 12rem 0 15rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+
+    &__left{
+
+        &__bio{
+            max-width: 55rem;
+            line-height: 1.75;
+        }
+
+        &__dots{
+            max-width: 35rem;
+            height: 5rem;
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 8rem;
+
+            &__dot{
+                width: 2rem;
+                height: 2rem;
+                background-color: rgba(255, 255, 255, .3);
+                border-radius: 100%;
+                margin-right: 2rem;
+                cursor: pointer;
+            }
+            .active-dot{
+                background-color: var(--clr--white);
+            }
+        }
+    }
+}
