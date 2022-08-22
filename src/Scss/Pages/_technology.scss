@@ -4,3 +4,46 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.tech{
+    padding: 2.2rem 0 0 16.7rem;
+
+    .wrapper{
+
+        display: grid;
+        grid-template-columns: 55% 45%;
+        gap: 5rem;
+        .left{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+
+            .left-inner{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+
+                .number{
+                    width: 5rem;
+                    height: 5rem;
+                    text-align: center;
+                    border-radius: 100%;
+                    border: 1px solid rgba(255,255,255,.5);
+                    margin-bottom: 3rem;
+                    padding-top: .5rem;
+                    color: var(--clr--white);
+                    cursor: pointer;
+                }
+                .number-active{
+                    background-color: var(--clr--white);
+                    color: var(--clr--black) !important;
+                }
+            }
+            .right-inner{
+                width: 100%;
+            }
+        }
+
+    }
+}
